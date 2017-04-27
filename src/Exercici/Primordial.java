@@ -1,6 +1,6 @@
 package Exercici;
 public class Primordial {
-    public double get_primordial(int n) throws IllegalArgumentException{
+    public double get_primordial(double n) throws IllegalArgumentException{
         if (n < 0){
             throw new IllegalArgumentException() ;
         }
@@ -11,7 +11,7 @@ public class Primordial {
 
         PrimeNumber primer = new PrimeNumber();
         Primordial unprimordial = new Primordial();
-        if (primer.isPrime(n)){
+        if (primer.isPrime((int) n)){
             return n * unprimordial.get_primordial(n - 1);
         }
 
